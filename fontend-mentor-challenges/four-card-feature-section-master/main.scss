@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-red: hsl(0, 78%, 62%);
+    --clr-cyan: hsl(180, 62%, 55%);
+    --clr-orange: hsl(34, 97%, 64%);
+    --clr-blue: hsl(212, 86%, 64%);
+
+    --clr-dark-blue: hsl(234, 12%, 34%);
+    --clr-gray-blue: hsl(229, 6%, 66%);
+    --clr-light-gray: hsl(0, 0%, 98%);
+
+    --fw-light: 200;
+    --fw-medium: 400;
+    --fw-strong: 600;
+
+    --fs-body: 15px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--fs-body);
+    background: var(--clr-light-gray);
+    color: var(--clr-gray-blue);
+}
+
+header {
+    max-width: 500px;
+    text-align: center;
+    margin: 90px auto 60px;
+}
+
+h1 {
+    font-weight: var(--fw-light);
+    color: var(--clr-dark-blue);
+}
+
+h1 span {
+    font-weight: var(--fw-strong);
+}
+
+.box-container {
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 1250px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.box {
+    max-width: 325px;
+    margin: 15px;
+    height: 250px;
+    background: white;
+    padding: 30px;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.10), 0 15px 12px rgba(0,0,0,0.10);;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+}
+
+.box.box-cyan::after {
+    background: var(--clr-cyan);
+}
+
+.box.box-red::after {
+    background: var(--clr-red);
+}
+
+.box.box-orange::after {
+    background: var(--clr-orange);
+}
+
+.box.box-blue::after {
+    background: var(--clr-blue);
+}
+
+.box-cyan, .box-blue {
+    transform: translateY(50%);
+}
+
+.box-title {
+    color: var(--clr-dark-blue);
+    font-weight: var(--fw-strong);
+    margin: 0 0 20px;
+}
+
+.box-desc {
+    font-size: 12px;
+    line-height: 2;
+    margin-bottom: 25px;
+}
+
+img {
+    float: right;
+}
+
+@media (max-width: 1066px) {
+    .box-cyan, .box-blue {
+        transform: translateY(0);
+    }
+}
