@@ -22,12 +22,9 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1rem;
     position: relative;
-<<<<<<< HEAD
     background-image: url(images/bg-pattern-desktop.svg);
     background-size: cover;
     background-repeat: no-repeat;
-=======
->>>>>>> 42fc362b4523c667821cb7a6caf77c2bae2513cd
 }
 
 .logo {
@@ -46,20 +43,12 @@ body {
 }
 
 header {
-<<<<<<< HEAD
     width: 90vw;
-=======
->>>>>>> 42fc362b4523c667821cb7a6caf77c2bae2513cd
     text-align: center;
     margin: 0 auto;
 }
 
 .page-title {
-<<<<<<< HEAD
-=======
-    max-width: 18rem;
-    margin: 1.5em auto .5em;
->>>>>>> 42fc362b4523c667821cb7a6caf77c2bae2513cd
     line-height: 1.2;
     text-transform: uppercase;
     letter-spacing: 10px;
@@ -72,33 +61,17 @@ header {
     }
 }
 
-<<<<<<< HEAD
-=======
-.error-message {
-    display: block;
-    font-size: .75em;
-    color: var(--clr-softRed);
-    width: 50%;
-    margin: 1em auto;
-}
-
->>>>>>> 42fc362b4523c667821cb7a6caf77c2bae2513cd
 .page-desc {
     color: var(--clr-desatrRed);
     font-weight: var(--fw-medium);
     line-height: 1.6;
     padding: 0;
-<<<<<<< HEAD
 }
 
 form {
     width: 100%;
     position: relative;
     margin-top: 2em;
-=======
-    max-width: 22rem;
-    margin: 0 auto;
->>>>>>> 42fc362b4523c667821cb7a6caf77c2bae2513cd
 }
 
 .email {
@@ -107,33 +80,17 @@ form {
     border: 1px solid var(--clr-desatrRed);
     border-radius: 50px;
     padding-left: 2em;
-<<<<<<< HEAD
     background: transparent;
     width: 100%;
    
 }
 
-=======
-    width: 100%;
-    margin-left: 3em;
-   
-}
-
-.error-icon {
-    background-image: url("images/icon-error.svg");
-    background-repeat: no-repeat;
-    background-position-x: 13em;
-    background-position-y: .75em;
-}
-
->>>>>>> 42fc362b4523c667821cb7a6caf77c2bae2513cd
 ::placeholder {
     color: var(--clr-desatrRed);
     font-weight: var(--fw-medium);
     font-size: .85rem;
 }
 
-<<<<<<< HEAD
 button {
     width: 5rem;
     height: 2.875rem;
@@ -143,29 +100,14 @@ button {
     background: var(--grd-secondary);
     border: none;
     border-radius: 50px;
-=======
-
-button {
-    width: 5rem;
-    height: 2.875rem;
-    background: var(--grd-secondary);
-    border: none;
-    border-radius: 50px;
-    transform: translateX(-3rem);
->>>>>>> 42fc362b4523c667821cb7a6caf77c2bae2513cd
     box-shadow: 0 0px 0px var(--clr-desatrRed,0.10), 0 5px 10px var(--clr-desatrRed,0.05);
     
     &:hover {
         background: var(--clr-desatrRed);
-<<<<<<< HEAD
-=======
-        width: 5.5rem;
->>>>>>> 42fc362b4523c667821cb7a6caf77c2bae2513cd
         cursor: pointer;
     }
 }
 
-<<<<<<< HEAD
 .error-icon {
     display: none;
 }
@@ -191,35 +133,21 @@ form.error .error-message {
 
 
 
-/* Media queries 
-================ */
-
-@media (min-width:700px) {
-=======
-form {
-    width: 20rem;
-    display: flex;
-    margin: 2em auto 0;
-}
-
+/* Media queries */
 @media (min-width:850px) {
->>>>>>> 42fc362b4523c667821cb7a6caf77c2bae2513cd
+
     .mobile-img {
         display: none;
     }
 
     .desktop-img {
         display: block;
-<<<<<<< HEAD
-        background-image: url("images/hero-desktop.jpg");
+        background-image: url("./images/hero-desktop.jpg");
         background-position: center center;
-=======
->>>>>>> 42fc362b4523c667821cb7a6caf77c2bae2513cd
         position: absolute;
         top: 0;
         right: 0;
         width: 40%;
-<<<<<<< HEAD
         height: 100vh;
     }
 
@@ -228,30 +156,12 @@ form {
         text-align: left;
     }
 
-    header {
-        margin-left: 15%;
-        width: 25em;
-    }
-
     .logo {
         margin-left: 15%;
     }
 
     .page-title {
         font-size: 3rem;
-=======
-    }
-
-    header {
-        text-align: left;
-    }
-
-    .page-title, .page-desc, form, .logo {
-        margin-left: 10%;
-    }
-
-    .page-title {
->>>>>>> 42fc362b4523c667821cb7a6caf77c2bae2513cd
         margin-top: 0.75em;
     }
 
@@ -260,15 +170,3 @@ form {
     }
 }
 
-<<<<<<< HEAD
-=======
-@media (min-width: 1000px) {
-    .page-title {
-        font-size: 3rem;
-    }
-
-    .page-title, .page-desc, form, .logo {
-        margin-left: 15%;
-    }
-}
->>>>>>> 42fc362b4523c667821cb7a6caf77c2bae2513cd
