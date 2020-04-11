@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --clr-desatrRed: hsl(0, 36%, 70%);
+  --clr-softRed: hsl(0, 93%, 68%);
+  --clr-darkRed: hsl(0, 6%, 24%);
+  --grd-primary: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  --grd-secondary: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  --fw-light: 300;
+  --fw-medium: 400;
+  --fw-strong: 600;
+}
+
+body {
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1rem;
+  position: relative;
+  background-image: url(images/bg-pattern-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  width: 6.75rem;
+  height: 1.5rem;
+  margin: 2rem 1em;
+}
+
+.desktop-img {
+  display: none;
+}
+
+.mobile-img {
+  display: block;
+  margin: 0 auto;
+}
+
+header {
+  width: 90vw;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.page-title {
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: var(--clr-desatrRed);
+  font-weight: var(--fw-light);
+}
+
+.page-title span {
+  color: var(--clr-darkRed);
+  font-weight: var(--fw-strong);
+}
+
+.page-desc {
+  color: var(--clr-desatrRed);
+  font-weight: var(--fw-medium);
+  line-height: 1.6;
+  padding: 0;
+}
+
+form {
+  width: 100%;
+  position: relative;
+  margin-top: 2em;
+}
+
+.email {
+  display: block;
+  height: 2.875rem;
+  border: 1px solid var(--clr-desatrRed);
+  border-radius: 50px;
+  padding-left: 2em;
+  background: transparent;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+  color: var(--clr-desatrRed);
+  font-weight: var(--fw-medium);
+  font-size: .85rem;
+}
+
+:-ms-input-placeholder {
+  color: var(--clr-desatrRed);
+  font-weight: var(--fw-medium);
+  font-size: .85rem;
+}
+
+::-ms-input-placeholder {
+  color: var(--clr-desatrRed);
+  font-weight: var(--fw-medium);
+  font-size: .85rem;
+}
+
+::placeholder {
+  color: var(--clr-desatrRed);
+  font-weight: var(--fw-medium);
+  font-size: .85rem;
+}
+
+button {
+  width: 5rem;
+  height: 2.875rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: var(--grd-secondary);
+  border: none;
+  border-radius: 50px;
+  -webkit-box-shadow: 0 0px 0px var(--clr-desatrRed, 0.1), 0 5px 10px var(--clr-desatrRed, 0.05);
+          box-shadow: 0 0px 0px var(--clr-desatrRed, 0.1), 0 5px 10px var(--clr-desatrRed, 0.05);
+}
+
+button:hover {
+  background: var(--clr-desatrRed);
+  cursor: pointer;
+}
+
+.error-icon {
+  display: none;
+}
+
+form.error .error-icon {
+  display: block;
+  position: absolute;
+  top: 9px;
+  right: 90px;
+}
+
+.error-message {
+  display: none;
+}
+
+form.error .error-message {
+  display: block;
+  font-size: .75em;
+  color: var(--clr-softRed);
+  margin: 1em .5em;
+  text-align: left;
+}
+
+/* Media queries 
+================ */
+@media (min-width: 700px) {
+  .mobile-img {
+    display: none;
+  }
+  .desktop-img {
+    display: block;
+    background-image: url("images/hero-desktop.jpg");
+    background-position: center center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100vh;
+  }
+  header {
+    max-width: 35vw;
+    text-align: left;
+  }
+  header {
+    margin-left: 15%;
+    width: 25em;
+  }
+  .logo {
+    margin-left: 15%;
+  }
+  .page-title {
+    font-size: 3rem;
+    margin-top: 0.75em;
+  }
+  input[type=email] {
+    margin-left: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */
