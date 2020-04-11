@@ -22,12 +22,9 @@ body {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1rem;
   position: relative;
-<<<<<<< HEAD
   background-image: url(images/bg-pattern-desktop.svg);
   background-size: cover;
   background-repeat: no-repeat;
-=======
->>>>>>> 42fc362b4523c667821cb7a6caf77c2bae2513cd
 }
 
 .logo {
@@ -46,20 +43,12 @@ body {
 }
 
 header {
-<<<<<<< HEAD
   width: 90vw;
-=======
->>>>>>> 42fc362b4523c667821cb7a6caf77c2bae2513cd
   text-align: center;
   margin: 0 auto;
 }
 
 .page-title {
-<<<<<<< HEAD
-=======
-  max-width: 18rem;
-  margin: 1.5em auto .5em;
->>>>>>> 42fc362b4523c667821cb7a6caf77c2bae2513cd
   line-height: 1.2;
   text-transform: uppercase;
   letter-spacing: 10px;
@@ -72,33 +61,17 @@ header {
   font-weight: var(--fw-strong);
 }
 
-<<<<<<< HEAD
-=======
-.error-message {
-  display: block;
-  font-size: .75em;
-  color: var(--clr-softRed);
-  width: 50%;
-  margin: 1em auto;
-}
-
->>>>>>> 42fc362b4523c667821cb7a6caf77c2bae2513cd
 .page-desc {
   color: var(--clr-desatrRed);
   font-weight: var(--fw-medium);
   line-height: 1.6;
   padding: 0;
-<<<<<<< HEAD
 }
 
 form {
   width: 100%;
   position: relative;
   margin-top: 2em;
-=======
-  max-width: 22rem;
-  margin: 0 auto;
->>>>>>> 42fc362b4523c667821cb7a6caf77c2bae2513cd
 }
 
 .email {
@@ -107,20 +80,8 @@ form {
   border: 1px solid var(--clr-desatrRed);
   border-radius: 50px;
   padding-left: 2em;
-<<<<<<< HEAD
   background: transparent;
   width: 100%;
-=======
-  width: 100%;
-  margin-left: 3em;
-}
-
-.error-icon {
-  background-image: url("images/icon-error.svg");
-  background-repeat: no-repeat;
-  background-position-x: 13em;
-  background-position-y: .75em;
->>>>>>> 42fc362b4523c667821cb7a6caf77c2bae2513cd
 }
 
 ::-webkit-input-placeholder {
@@ -150,27 +111,18 @@ form {
 button {
   width: 5rem;
   height: 2.875rem;
-<<<<<<< HEAD
   position: absolute;
   top: 0;
   right: 0;
   background: var(--grd-secondary);
   border: none;
   border-radius: 50px;
-=======
-  background: var(--grd-secondary);
-  border: none;
-  border-radius: 50px;
-  -webkit-transform: translateX(-3rem);
-          transform: translateX(-3rem);
->>>>>>> 42fc362b4523c667821cb7a6caf77c2bae2513cd
   -webkit-box-shadow: 0 0px 0px var(--clr-desatrRed, 0.1), 0 5px 10px var(--clr-desatrRed, 0.05);
           box-shadow: 0 0px 0px var(--clr-desatrRed, 0.1), 0 5px 10px var(--clr-desatrRed, 0.05);
 }
 
 button:hover {
   background: var(--clr-desatrRed);
-<<<<<<< HEAD
   cursor: pointer;
 }
 
@@ -197,39 +149,21 @@ form.error .error-message {
   text-align: left;
 }
 
-/* Media queries 
-================ */
-@media (min-width: 700px) {
-=======
-  width: 5.5rem;
-  cursor: pointer;
-}
+/* Media queries */
 
-form {
-  width: 20rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 2em auto 0;
-}
+@media (min-width: 750px) {
 
-@media (min-width: 850px) {
->>>>>>> 42fc362b4523c667821cb7a6caf77c2bae2513cd
   .mobile-img {
     display: none;
   }
   .desktop-img {
     display: block;
-<<<<<<< HEAD
     background-image: url("images/hero-desktop.jpg");
     background-position: center center;
-=======
->>>>>>> 42fc362b4523c667821cb7a6caf77c2bae2513cd
     position: absolute;
     top: 0;
     right: 0;
     width: 40%;
-<<<<<<< HEAD
     height: 100vh;
   }
   header {
@@ -245,32 +179,11 @@ form {
   }
   .page-title {
     font-size: 3rem;
-=======
-  }
-  header {
-    text-align: left;
-  }
-  .page-title, .page-desc, form, .logo {
-    margin-left: 10%;
-  }
-  .page-title {
->>>>>>> 42fc362b4523c667821cb7a6caf77c2bae2513cd
     margin-top: 0.75em;
   }
   input[type=email] {
     margin-left: 0;
   }
 }
-<<<<<<< HEAD
-=======
 
-@media (min-width: 1000px) {
-  .page-title {
-    font-size: 3rem;
-  }
-  .page-title, .page-desc, form, .logo {
-    margin-left: 15%;
-  }
-}
->>>>>>> 42fc362b4523c667821cb7a6caf77c2bae2513cd
 /*# sourceMappingURL=main.css.map */
