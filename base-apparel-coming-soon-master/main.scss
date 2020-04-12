@@ -133,10 +133,8 @@ form.error .error-message {
 
 
 
-/* Media queries 
-================ */
+@media (min-width: 750px) {
 
-@media (min-width:700px) {
     .mobile-img {
         display: none;
     }

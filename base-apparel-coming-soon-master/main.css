@@ -149,9 +149,7 @@ form.error .error-message {
   text-align: left;
 }
 
-/* Media queries 
-================ */
-@media (min-width: 700px) {
+@media (min-width: 750px) {
   .mobile-img {
     display: none;
   }
