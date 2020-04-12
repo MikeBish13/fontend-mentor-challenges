@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --clr-blue: hsl(248, 32%, 49%);
+  --clr-red: hsl(0, 100%, 74%);
+  --clr-green: hsl(154, 59%, 51%);
+  --clr-dark-blue: hsl(249, 10%, 26%);
+  --clr-gray-blue: hsl(246, 25%, 77%);
+  --fw-light: 400;
+  --fw-medium: 500;
+  --fw-heavy: 600;
+  --fw-bold: 700;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background-color: var(--clr-red);
+}
+
+h1, p, button {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  background-image: url("images/bg-intro-mobile.png");
+  background-repeat: repeat;
+  z-index: 1;
+}
+
+.container {
+  width: 85vw;
+  margin: 0 auto;
+  text-align: center;
+  padding: 6em 0 0 0;
+}
+
+.page-title {
+  font-size: 1.65rem;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+
+.page-desc {
+  font-weight: 400;
+  margin-bottom: 2.5em;
+}
+
+.btn.btn-action {
+  background: var(--clr-blue);
+  width: 100%;
+  padding: 1.2em 4em;
+  font-size: 1rem;
+  font-weight: var(--fw-light);
+  line-height: 1.6;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.btn.btn-action::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -7px;
+  border-radius: 10px;
+  height: 26px;
+  z-index: -1;
+  background: rgba(62, 60, 73, 0.2);
+}
+
+.btn.btn-action span {
+  font-weight: var(--fw-bold);
+}
+
+.form-container {
+  width: 85vw;
+  margin: 0 auto;
+}
+
+form {
+  margin: 1.5em auto 3em;
+  background: white;
+  border-radius: 10px;
+  padding: 1.5em;
+  position: relative;
+}
+
+form::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  background: rgba(62, 60, 73, 0.2);
+  border-radius: 10px;
+  left: 0;
+  bottom: -8px;
+  z-index: -1;
+}
+
+input {
+  display: block;
+  font-size: 1rem;
+  border: 1px solid var(--clr-gray-blue);
+  border-radius: 5px;
+  padding: 1.25em;
+  margin-bottom: 1em;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+input::-webkit-input-placeholder {
+  font-weight: var(--fw-heavy);
+  font-size: .9rem;
+}
+
+input:-ms-input-placeholder {
+  font-weight: var(--fw-heavy);
+  font-size: .9rem;
+}
+
+input::-ms-input-placeholder {
+  font-weight: var(--fw-heavy);
+  font-size: .9rem;
+}
+
+input::placeholder {
+  font-weight: var(--fw-heavy);
+  font-size: .9rem;
+}
+
+.error-icon, .error-message {
+  display: none;
+}
+
+.first-name.error, .last-name.error, .email.error, .password.error {
+  position: relative;
+  margin-bottom: 2em;
+}
+
+.first-name.error input, .last-name.error input, .email.error input, .password.error input {
+  border: 2px solid var(--clr-red);
+  color: var(--clr-red);
+}
+
+.first-name.error .error-icon, .last-name.error .error-icon, .email.error .error-icon, .password.error .error-icon {
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 85%;
+}
+
+.first-name.error .error-message, .last-name.error .error-message, .email.error .error-message, .password.error .error-message {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -30%;
+  color: var(--clr-red);
+  font-size: .75rem;
+}
+
+.btn-submit {
+  width: 100%;
+  background: var(--clr-green);
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: .9rem;
+  letter-spacing: 1px;
+  font-weight: var(--fw-medium);
+  color: white;
+  padding: 1.3em 2em;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  border-bottom: 7px solid #11975d;
+}
+
+.btn-submit:hover {
+  background: #85f3c4;
+}
+
+.btn-submit::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -7px;
+  border-radius: 10px;
+  height: 26px;
+  z-index: -1;
+}
+
+.terms-cond {
+  color: var(--clr-gray-blue);
+  font-size: 0.7rem;
+  line-height: 2;
+  padding: 1.5em;
+  text-align: center;
+  margin-top: .5em;
+}
+
+.terms-cond a {
+  text-decoration: none;
+  color: var(--clr-red);
+  font-weight: var(--fw-bold);
+}
+
+@media (min-width: 720px) {
+  .background {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container {
+    max-width: 480px;
+    margin: 9em 2em 0 5em;
+    text-align: left;
+  }
+  .container .page-title {
+    font-size: 3rem;
+  }
+  .form-container {
+    margin: 4em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
