@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="main.css">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+<body>
+<div class="background">
+
+<div class="container">  
+<h1 class="page-title">Learn to code by watching others</h1>
+  <p class="page-desc">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+  but understanding how developers think is invaluable.</p>  
+
+
+
+</div>
+
+<div class="form-container">  
+  <button class="btn btn-action"><span>Try it free 7 days</span> then $20/mo. thereafter</button>
+<form id="form" novalidate>
+  <div class="first-name">
+  <input type="text" required placeholder="First Name">
+  <img class="error-icon" src="images/icon-error.svg" alt="error">
+  <p class="error-message"><em>First Name cannot be empty</em></p>
+  </div>
+  <div class="last-name">
+  <input type="text" required placeholder="Last Name">
+  <img class="error-icon" src="images/icon-error.svg" alt="error">
+  <p class="error-message"><em>Last Name cannot be empty</em></p>
+  </div>
+  <div class="email">
+  <input type="email" id="email" required placeholder="Email Address">
+  <img class="error-icon" src="images/icon-error.svg" alt="error">
+  <p class="error-message error-message-email"><em>Email cannot be empty</em></p>
+  </div>
+  <div class="password">
+  <input type="password" required placeholder="Password">
+  <img class="error-icon" src="images/icon-error.svg" alt="error">
+  <p class="error-message"><em>Password cannot be empty</em></p>
+  </div>
+  <button type="submit" class="btn btn-submit">Claim your free trial </button>
+  <p class="terms-cond">By clicking the button, you are agreeing to our <a href="">Terms and Services</a></p>
+</form>
+</div>
+
+  
+</div>  
+</body>
+
+<script src="script.js"></script>
+</html>
