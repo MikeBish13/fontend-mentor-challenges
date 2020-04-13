@@ -40,7 +40,7 @@ inputs.forEach(function(e) {
         parent.classList.remove('error');
         })
          
-    });
+});
  
 
 
