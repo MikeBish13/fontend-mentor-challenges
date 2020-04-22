@@ -164,8 +164,7 @@ nav ul li a {
 }
 
 .hero {
-  height: 100vh;
-  margin: 1em 0;
+  margin: 1em 0 4em;
   position: relative;
 }
 
@@ -410,6 +409,9 @@ footer .social-icons a {
   display: inline-flex;
 }
 
+/* =======
+Media queries
+========== */
 @media (max-width: 610px) {
   .container {
     display: -webkit-box;
