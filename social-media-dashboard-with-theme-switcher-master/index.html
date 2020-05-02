@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="main.css" />
+
+    <title>Frontend Mentor | Social Media Dashboard</title>
+  </head>
+  <body class="light">
+    <section class="header">
+      <div class="container">
+        <h1 class="page-title">Social Media Dashboard</h1>
+        <p class="total-followers">Total Followers: 23,004</p>
+        <div class="mode-container">
+          <p class="toggle-label">Dark Mode</p>
+          <div class="toggle-button">
+            <input type="checkbox" id="toggle" />
+            <label class="toggleLabel" for="toggle"></label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main-dash container">
+        <div class="main-dash-grid">
+          <!-- Facebook Card -->
+          <div class="card card-facebook">
+            <p class="card-title">
+              <span><img src="images/icon-facebook.svg" /></span>@nathanf
+            </p>
+            <p class="card-info">1987</p>
+            <p class="sub-info">Followers</p>
+            <p class="card-movement">
+              <span><img src="images/icon-up.svg" /></span>12 Today
+            </p>
+          </div>
+          <!-- Twitter Card -->
+          <div class="card card-twitter">
+            <p class="card-title">
+              <span><img src="images/icon-twitter.svg" /></span>@nathanf
+            </p>
+            <p class="card-info">1044</p>
+            <p class="sub-info">Followers</p>
+            <p class="card-movement">
+              <span><img src="images/icon-up.svg" /></span>99 Today
+            </p>
+          </div>
+          <!-- Instagram Card -->
+          <div class="card card-instagram">
+            <p class="card-title">
+              <span><img src="images/icon-instagram.svg" /></span>@realnathanf
+            </p>
+            <p class="card-info">11k</p>
+            <p class="sub-info">Followers</p>
+            <p class="card-movement">
+              <span><img src="images/icon-up.svg" /></span>1099 Today
+            </p>
+          </div>
+          <!-- YouTube Card -->
+          <div class="card card-youtube">
+            <p class="card-title">
+              <span><img src="images/icon-youtube.svg" /></span>Nathan F.
+            </p>
+            <p class="card-info">8239</p>
+            <p class="sub-info">Subscribers</p>
+            <p class="card-movement card-movement-down">
+              <span><img src="images/icon-down.svg" /></span>144 Today
+            </p>
+          </div>
+      </div>
+    </section>
+
+    <section class="overview">
+      <div class="container">
+        <h2 class="overview-title">Overview - Today</h2>
+        <div class="widget-grid">
+          <!-- Facebook Views -->
+          <div class="widget">
+            <p class="widget-title">Page Views<br /><span>87</span></p>
+            <div class="widget-right">
+              <img class="widget-img" src="images/icon-facebook.svg" />
+              <p class="widget-movement widget-movement-up">
+                <span><img src="images/icon-up.svg" /></span>3%
+              </p>
+            </div>
+          </div>
+          <!-- Facebook Likes -->
+          <div class="widget">
+            <p class="widget-title">Likes<br /><span>52</span></p>
+            <div class="widget-right">
+              <img class="widget-img" src="images/icon-facebook.svg" />
+              <p class="widget-movement widget-movement-down">
+                <span><img src="images/icon-down.svg" /></span>2%
+              </p>
+            </div>
+          </div>
+          <!-- Instagram Likes -->
+          <div class="widget">
+            <p class="widget-title">Likes<br /><span>5462</span></p>
+            <div class="widget-right">
+              <img class="widget-img" src="images/icon-instagram.svg" />
+              <p class="widget-movement widget-movement-up">
+                <span><img src="images/icon-up.svg" /></span>2257%
+              </p>
+            </div>
+          </div>
+          <!-- Instagram Views -->
+          <div class="widget">
+            <p class="widget-title">Profile Views<br /><span>52k</span></p>
+            <div class="widget-right">
+              <img class="widget-img" src="images/icon-instagram.svg" />
+              <p class="widget-movement widget-movement-up">
+                <span><img src="images/icon-up.svg" /></span>1375%
+              </p>
+            </div>
+          </div>
+          <!-- Twitter Retweets -->
+          <div class="widget">
+            <p class="widget-title">Retweets<br /><span>117</span></p>
+            <div class="widget-right">
+              <img class="widget-img" src="images/icon-twitter.svg" />
+              <p class="widget-movement widget-movement-up">
+                <span><img src="images/icon-up.svg" /></span>303%
+              </p>
+            </div>
+          </div>
+          <!-- Twitter Likes -->
+          <div class="widget">
+            <p class="widget-title">Likes<br /><span>507</span></p>
+            <div class="widget-right">
+              <img class="widget-img" src="images/icon-twitter.svg" />
+              <p class="widget-movement widget-movement-up">
+                <span><img src="images/icon-up.svg" /></span>553%
+              </p>
+            </div>
+          </div>
+          <!-- YouTube Likes -->
+          <div class="widget">
+            <p class="widget-title">Likes<br /><span>107</span></p>
+            <div class="widget-right">
+              <img class="widget-img" src="images/icon-youtube.svg" />
+              <p class="widget-movement widget-movement-down">
+                <span><img src="images/icon-down.svg" /></span>19%
+              </p>
+            </div>
+          </div>
+          <!-- YouTube Views -->
+          <div class="widget">
+            <p class="widget-title">Total Views<br /><span>1407</span></p>
+            <div class="widget-right">
+              <img class="widget-img" src="images/icon-youtube.svg" />
+              <p class="widget-movement widget-movement-down">
+                <span><img src="images/icon-down.svg" /></span>12%
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <script src="index.js"></script>
+
+</html>
