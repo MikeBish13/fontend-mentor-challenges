@@ -1,0 +1,221 @@
+/* Set Up ====
+=========== */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --clr-pale-blue: hsl(243, 100%, 93%);
+  --clr-grayish-blue: hsl(229, 7%, 55%);
+  --clr-dark-blue: hsl(228, 56%, 26%);
+  --clr-very-dark-blue: hsl(229, 57%, 11%);
+  --fw-normal: 400;
+  --fw-bold: 700;
+}
+
+body {
+  background: url("images/bg-mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 14px;
+  font-family: 'Raleway', 'sans-serif';
+  color: var(--clr-pale-blue);
+}
+
+/* Mobile View ===
+================ */
+.container {
+  width: 90%;
+  margin: 8rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.head {
+  background: var(--clr-dark-blue);
+  padding: 2.75rem 2rem;
+  border-radius: 10px;
+  border-top-right-radius: 90px;
+}
+
+.icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.img-container {
+  margin-right: 1rem;
+  margin-top: 1.75rem;
+  background: var(--clr-very-dark-blue);
+  height: 3rem;
+  width: 3rem;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.foot {
+  margin-top: 1rem;
+  padding: 2rem 1rem 3rem;
+  background: var(--clr-dark-blue);
+  border-radius: 10px;
+}
+
+.storage-text {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.progress-bar {
+  background: #172554;
+  border-radius: 50px;
+  width: 85%;
+  height: 20px;
+  margin: 1.5em auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.progress {
+  height: 14px;
+  margin-left: 3px;
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50px;
+  background: -webkit-gradient(linear, left top, right top, from(#ffa399), to(#ff4d97));
+  background: linear-gradient(to right, #ffa399, #ff4d97);
+}
+
+.toggle {
+  height: 10px;
+  width: 10px;
+  background: white;
+  border-radius: 10px;
+  margin-right: 2px;
+  margin-left: auto;
+}
+
+.axis {
+  width: 85%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.total {
+  text-transform: uppercase;
+  color: var(--clr-grayish-blue);
+  font-weight: var(--fw-bold);
+  letter-spacing: 1px;
+  background: white;
+  width: 52%;
+  height: 4.5rem;
+  border-radius: 10px;
+  margin: -2rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.total-num {
+  font-size: 2.5rem;
+  color: black;
+  margin: .25rem;
+}
+
+/* Desktop view ====
+================== */
+@media (min-width: 950px) {
+  body {
+    background: url("images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: var(--clr-very-dark-blue);
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container {
+    margin-top: -.25rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    position: relative;
+    max-width: 1000px;
+  }
+  .head {
+    width: 35%;
+  }
+  .foot {
+    width: 60%;
+    padding-bottom: 1rem;
+  }
+  .total {
+    position: absolute;
+    width: 18%;
+    top: 50px;
+    right: 50px;
+  }
+  .total::after {
+    content: "";
+    bottom: -20px;
+    right: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 30px solid white;
+    border-left: 50px solid transparent;
+  }
+}
+/*# sourceMappingURL=main.css.map */
