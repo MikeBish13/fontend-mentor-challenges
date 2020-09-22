@@ -21,7 +21,7 @@
 body {
   margin: 0;
   font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.6;
   color: var(--clr-white);
   background: var(--clr-main-blue);
@@ -43,8 +43,10 @@ img {
   text-decoration: none;
   background: var(--clr-cyan);
   color: var(--clr-white);
-  padding: .75em 6em;
+  padding: 0.75em 6em;
   border-radius: 50px;
+  position: relative;
+  z-index: 1;
 }
 
 /* Typography ====
@@ -108,27 +110,50 @@ h2 {
 ============== */
 .hero {
   margin-bottom: 8em;
+  background-color: var(--clr-intro-blue);
 }
 
 .hero-img {
   width: 90%;
-  max-width: 430px;
-  margin: 0 auto;
+  max-width: 650px;
+  margin: 1em auto 0;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-title {
-  max-width: 430px;
+  max-width: 650px;
   margin: 1em auto 0;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-text {
   padding-top: 2.5em;
   max-width: 430px;
   margin: 0 auto 3em;
+  position: relative;
+  z-index: 1;
+}
+
+/* Background image ====
+====================== */
+.mobile-background-img {
+  display: block;
+  margin-top: -20rem;
+}
+
+.desktop-background-img {
+  display: none;
 }
 
 /* Icons ======
 ============== */
+.icon-grid {
+  background-color: var(--clr-main-blue);
+  padding-top: 12rem;
+}
+
 .card {
   margin-bottom: 6em;
 }
@@ -163,7 +188,7 @@ h2 {
 }
 
 .production-container::after {
-  content: '';
+  content: "";
   width: 100%;
   position: absolute;
   bottom: -15%;
@@ -173,7 +198,7 @@ h2 {
 }
 
 .arrow-icon {
-  margin-left: .25em;
+  margin-left: 0.25em;
 }
 
 .production-link {
@@ -201,7 +226,7 @@ h2 {
   border-radius: 8px;
   padding: 1.5em 2em;
   text-align: left;
-  font-size: .8rem;
+  font-size: 0.8rem;
   line-height: 1.8;
   width: 95%;
   margin: 0 auto 3em;
@@ -233,11 +258,11 @@ h2 {
 
 .name {
   font-weight: var(--fw-bold);
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
 }
 
 .job {
-  font-size: .6rem;
+  font-size: 0.6rem;
 }
 
 /* Call-to-action =====
@@ -261,7 +286,7 @@ h2 {
 
 .email-btn {
   border: none;
-  font-size: .8rem;
+  font-size: 0.8rem;
   font-weight: var(--fw-bold);
   padding: 1.1em 3em;
   width: 100%;
@@ -293,6 +318,7 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 1.5em;
+  margin-right: 0.5em;
 }
 
 .location-icon {
@@ -303,7 +329,11 @@ h2 {
 .location-text,
 .phone-number,
 .email-address {
-  margin: 0 0 0 1em;
+  margin: 0 0 0.5em 1em;
+}
+
+.email-address {
+  word-wrap: break-word;
 }
 
 .footer-list {
@@ -339,12 +369,34 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: .5em;
+  margin: 0.5em;
 }
 
 /* Media queries ====
 =================== */
+@media (min-width: 375px) {
+  .mobile-background-img {
+    display: none;
+  }
+  .desktop-background-img {
+    display: block;
+    margin-top: -12rem;
+    position: relative;
+    z-index: 0;
+  }
+  .icon-grid {
+    margin-top: -8rem;
+    padding-top: 10rem;
+  }
+}
+
 @media (min-width: 650px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .icon-grid {
+    padding-top: 1rem;
+  }
   .card-container {
     display: -webkit-box;
     display: -ms-flexbox;
