@@ -1,1 +1,1 @@
-# fontend-mentor-challenges
+# frontend-mentor-challenges
