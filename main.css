@@ -23,11 +23,14 @@ img {
 
 ul {
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   text-align: center;
@@ -35,6 +38,9 @@ ul {
 
 ul li {
   width: 30%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   margin: 1em;
   -webkit-transition: -webkit-transform 300ms ease-in-out;
   transition: -webkit-transform 300ms ease-in-out;

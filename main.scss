@@ -23,15 +23,16 @@ img {
 
 ul {
     list-style: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    display: inline-flex;
+    display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    // justify-content: space-between;
     text-align: center;
 
     li {
         width: 30%;
+        flex-grow: 1;
         margin: 1em;
         transition: transform 300ms ease-in-out;
 
