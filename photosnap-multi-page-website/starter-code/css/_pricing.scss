@@ -1,0 +1,341 @@
+.pricing-hero {
+    @include mq(tablet) {
+        height: 490px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+.pricing-hero__img {
+    height: 294px;
+    background: url('../assets/pricing/mobile/hero.jpg');
+    background-size: cover;
+
+    @include mq(tablet) {
+        background: url('../assets/pricing/tablet/hero.jpg');
+        background-size: cover;
+        width: 35%;
+        height: 100%;
+    }
+
+    @include mq(desktop) {
+        background: url('../assets/pricing/desktop/hero.jpg');
+        background-size: cover;
+        width: 57%;
+    }
+}
+
+.pricing-hero__info {
+    background: var(--clr-black);
+    color: var(--clr-white);
+    padding: 4.5rem 1.75rem;
+    position: relative;
+
+    @include mq(tablet) {
+        width: 65%;
+        padding: 10.8125rem 3.375rem;
+    }
+
+    @include mq(desktop) {
+        width: 43%;
+        padding: 10.8125rem 7rem;
+    }
+
+    h1 {
+        margin-bottom: 1rem;
+    }
+
+    &::after {
+        content: '';
+        width: 128px;
+        height: 6px;
+        background: var(--clr-gradient);
+        position: absolute;
+        top: 0;
+        left: 1.75rem;
+
+        @include mq(tablet) {
+            display: none;
+        }
+    }
+}
+
+
+.pricing {
+    padding-top: 4rem;
+
+    @include mq(desktop) {
+        padding-top: 7.5rem;
+    }
+}
+
+.yearly {
+    color: var(--clr-gray);
+}
+
+.toggle-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 64px;
+    height: 32px;
+    background: var(--clr-gray);
+    display: block;
+    border-radius: 100px;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        height: 24px;
+        width: 24px;
+        border-radius: 90px;
+        background: var(--clr-black);
+        transition: var(--transition);
+    }
+}
+
+input:checked + label {
+    background: var(--clr-black);
+}
+
+input:checked + label::after {
+    background: var(--clr-white);
+    left: calc(100% - 4px);
+    transform: translateX(-100%);
+}
+
+.pricing-grid {
+    margin-top: 2.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    @include mq(desktop) {
+        margin-top: 3rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+.pricing-box {
+    padding: 3.5rem 1.25rem 2.5rem 1.25rem;
+    background: #F5F5F5;
+
+    @include mq(tablet) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 2rem;
+    }
+
+    @include mq(desktop) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 407px;
+        width: 350px;
+    }
+
+    h2 {
+        margin-bottom: 1.2rem;
+
+        @include mq(tablet) {
+            text-align: left;
+        }
+
+        @include mq(desktop) {
+            text-align: center;
+        }
+
+    }
+
+    p {
+        margin-bottom: 2.5rem;
+        
+        @include mq(tablet) {
+            text-align: left;
+            max-width: 270px;
+        }
+        @include mq(desktop) {
+            text-align: center;
+        }
+
+    }
+
+    .price {
+        font-size: 40px;
+        letter-spacing: 4px;
+        font-weight: var(--fw-bold);
+        color: var(--clr-black);
+        opacity: 1;
+        margin-bottom: 0;
+
+        @include mq(tablet) {
+            grid-row: 1 / 2;
+            grid-column: 2 / 3;
+            text-align: right;
+            justify-self: end;
+        }
+        @include mq(desktop) {
+            text-align: center;
+        }
+
+    }
+
+    .date {
+        margin-bottom: 2.5rem;
+        
+        @include mq(tablet) {
+            grid-column: 2 / 3;
+            text-align: right;
+            justify-self: end;
+        }
+        @include mq(desktop) {
+            text-align: center;
+        }
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+
+        @include mq(tablet) {
+            max-width: 270px;
+        }
+        @include mq(desktop) {
+            text-align: center;
+        }
+        
+    }
+
+    &-accent {
+        background: var(--clr-black);
+        color: var(--clr-white);
+        position: relative;
+
+        @include mq(desktop) {
+            height: 470px;
+        }
+
+        .price {
+            color: var(--clr-white);
+        }
+
+        &::after {
+            content: '';
+            height: 6px;
+            width: 100%;
+            background: var(--clr-gradient);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+
+}
+
+.table-mobile {
+    padding: 4rem 0;
+
+    @include mq(tablet) {
+        display: none;
+    }
+
+    .table-row {
+        padding: 1.5rem 0;
+        border-bottom: 1px solid var(--clr-gray);
+
+
+        .table-checkboxes {
+            display: flex; 
+            gap: 4.25rem;
+        }
+
+        .checked {
+            height: 14px;
+            width: 16px;
+            margin-top: 0.5rem;
+            background: url('../assets/pricing/desktop/check.svg');
+        }
+
+        h4 {
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1.6px;
+            line-height: 13px;
+        }
+
+        &-title {
+            border-bottom: 1px solid var(--clr-black);
+
+            h4 {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.table-full {
+    display: none;
+    margin: 7rem 0;
+
+    .table-desktop {
+        border-collapse: collapse;
+        margin-top: 4rem;
+        width: 100%;
+        max-width: 731px;
+    }
+
+    .left-col {
+        text-align: left;
+        width: 40%;
+        padding-left: 1.5rem;
+    }
+
+    .top-row {
+        border-bottom: 1px solid var(--clr-black);
+    }
+
+    .table-row {
+        border-bottom: 1px solid var(--clr-gray);
+    }
+
+    .data-col {
+        width: 20%;
+    }
+
+    td {
+        padding: 1.4375rem 0;
+        text-align: center;
+    }
+
+
+    @include mq(tablet) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+

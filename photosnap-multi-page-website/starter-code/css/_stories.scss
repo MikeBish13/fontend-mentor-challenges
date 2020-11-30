@@ -1,0 +1,154 @@
+.stories-hero__img {
+    background: url('../assets/stories/mobile/moon-of-appalacia.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 317px;
+    width: 100%;
+
+    @include mq(tablet) {
+        display: none;
+    }
+}
+
+.stories-hero__feature {
+    background: var(--clr-black);
+    color: var(--clr-white);
+    padding: 3rem 1.75rem;
+
+    @include mq(tablet) {
+        height: 650px;
+        padding: 7.625rem 0 7.625rem 2.4375rem;
+        background: url('../assets/stories/tablet/moon-of-appalacia.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    @include mq(desktop) {
+        padding: 7.625rem 0 7.625rem 7rem;
+        background: url('../assets/stories/desktop/moon-of-appalacia.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    h4,
+    h1,
+    p {
+        max-width: 387px;
+    }
+
+    h4 {
+        margin-bottom: 1rem;
+    }
+
+    h1 {
+        margin-bottom: 1rem;
+    }
+
+    .stories-hero__feature__info {
+        font-size: 0.8125rem;
+    }
+
+    p {
+        margin-bottom: 1.5rem;
+    }
+
+}
+
+.img-card-tour {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.66)), url('../assets/stories/mobile/world-tour.jpg');
+
+    @include mq(tablet) {
+        background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.66)), url('../assets/stories/desktop/world-tour.jpg');
+    }
+}
+
+.img-card-corners {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.66)), url('../assets/stories/mobile/unforeseen-corners.jpg');
+
+    @include mq(tablet) {
+        background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.66)), url('../assets/stories/desktop/unforeseen-corners.jpg');
+    }
+}
+
+.img-card-africa {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.66)), url('../assets/stories/mobile/king-on-africa.jpg');
+
+    @include mq(tablet) {
+        background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.66)), url('../assets/stories/desktop/king-on-africa.jpg');
+    }
+}
+
+.img-card-nowhere {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.66)), url('../assets/stories/mobile/trip-to-nowhere.jpg');
+
+    @include mq(tablet) {
+        background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.66)), url('../assets/stories/desktop/trip-to-nowhere.jpg');
+    }
+}
+
+.img-card-sea {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.66)), url('../assets/stories/mobile/rage-of-the-sea.jpg');
+
+    @include mq(tablet) {
+        background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.66)), url('../assets/stories/desktop/rage-of-the-sea.jpg');
+    }
+}
+
+.img-card-running {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.66)), url('../assets/stories/mobile/running-free.jpg');
+
+    @include mq(tablet) {
+        background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.66)), url('../assets/stories/desktop/running-free.jpg');
+    }
+}
+
+.img-card-waves {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.66)), url('../assets/stories/mobile/behind-the-waves.jpg');
+
+    @include mq(tablet) {
+        background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.66)), url('../assets/stories/desktop/behind-the-waves.jpg');
+    }
+}
+
+.img-card-waters {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.66)), url('../assets/stories/mobile/calm-waters.jpg');
+
+    @include mq(tablet) {
+        background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.66)), url('../assets/stories/desktop/calm-waters.jpg');
+    }
+}
+
+.img-card-milky {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.66)), url('../assets/stories/mobile/milky-way.jpg');
+
+    @include mq(tablet) {
+        background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.66)), url('../assets/stories/desktop/milky-way.jpg');
+    }
+}
+
+.img-card-forest {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.66)), url('../assets/stories/mobile/dark-forest.jpg');
+
+    @include mq(tablet) {
+        background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.66)), url('../assets/stories/desktop/dark-forest.jpg');
+    }
+}
+
+.img-card-beauty {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.66)), url('../assets/stories/mobile/somwarpet.jpg');
+
+    @include mq(tablet) {
+        background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.66)), url('../assets/stories/desktop/somwarpet.jpg');
+    }
+}
+
+.img-card-dreams {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.66)), url('../assets/stories/mobile/land-of-dreams.jpg');
+
+    @include mq(tablet) {
+        background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.66)), url('../assets/stories/desktop/land-of-dreams.jpg');
+    }
+}

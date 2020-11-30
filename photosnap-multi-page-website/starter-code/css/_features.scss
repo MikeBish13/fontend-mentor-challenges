@@ -1,0 +1,155 @@
+.features-hero {
+    @include mq(tablet) {
+        height: 490px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+.features-hero__img {
+    height: 294px;
+    background: url('../assets/features/mobile/hero.jpg');
+    background-size: cover;
+
+    @include mq(tablet) {
+        background: url('../assets/features/tablet/hero.jpg');
+        background-size: cover;
+        width: 35%;
+        height: 100%;
+    }
+
+    @include mq(desktop) {
+        background: url('../assets/features/desktop/hero.jpg');
+        background-size: cover;
+        width: 57%;
+    }
+}
+
+.features-hero__info {
+    background: var(--clr-black);
+    color: var(--clr-white);
+    padding: 4.5rem 1.75rem;
+    position: relative;
+
+    @include mq(tablet) {
+        width: 65%;
+        padding: 10.8125rem 3.375rem;
+    }
+
+    @include mq(desktop) {
+        width: 43%;
+        padding: 10.8125rem 7rem;
+    }
+
+    h1 {
+        margin-bottom: 1rem;
+    }
+
+    &::after {
+        content: '';
+        width: 128px;
+        height: 6px;
+        background: var(--clr-gradient);
+        position: absolute;
+        top: 0;
+        left: 1.75rem;
+
+        @include mq(tablet) {
+            display: none;
+        }
+    }
+}
+.gradient-box {
+    position: relative;
+    max-width: 387px;
+}
+
+.gradient-box::after {
+    @include mq(tablet) {
+        content: '';
+        width: 6px;
+        height: 100%;
+        background: var(--clr-gradient);
+        position: absolute;
+        top: 0;
+        left: -3.375rem;
+    }
+
+    @include mq(desktop) {
+        left: -7rem;
+    }
+}
+
+.feature-grid {
+    padding: 4rem 0 0 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+
+    @include mq(tablet) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 11px;
+    }
+
+    @include mq(desktop) {
+        gap: 30px;
+        padding: 10rem 0 3.5rem 0;
+    }
+
+    .feature {
+        max-width: 340px;
+
+        @include mq(tablet) {
+            margin-bottom: 4.5rem;
+        }
+
+        @include mq(desktop) {
+            margin-bottom: 6.5rem;
+        }
+    }
+}
+
+.call-to-action {
+    height: 280px;
+    background: url('../assets/shared/mobile/bg-beta.jpg');
+    background-size: cover;
+    color: var(--clr-white);
+    padding: 4rem 2rem;
+    position: relative;
+
+    @include mq(tablet) {
+        background: url('../assets/shared/tablet/bg-beta.jpg');
+        background-size: cover;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @include mq(desktop) {
+        padding: 4rem 10.3125rem;
+    }
+
+    h1 { 
+        margin-bottom: 1.5rem;
+        max-width: 400px;
+    }
+
+    &::after {
+        content: '';
+        height: 6px;
+        width: 128px;
+        background: var(--clr-gradient);
+        position: absolute;
+        top: 0;
+        left: 2rem;
+
+        @include mq(tablet) {
+            width: 6px;
+            height: 100%;
+            left: 0;
+        }
+    }
+
+}
