@@ -1,0 +1,78 @@
+.information-container {
+    margin-top: 64px;
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.75);
+    transition: all 200ms ease-in;
+
+    .info-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        @include mq(tablet) {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 5px;
+            width: 42%;
+            margin-bottom: 0;
+        }
+
+        @include mq(desktop) {
+            gap: 20px;
+        }
+    }
+
+    h6 {
+        color: #303030;
+    }
+
+    p {
+        color: #303030;
+        font-size: 20px;
+        letter-spacing: 0;
+        font-weight: var(--fw-bold);
+
+        @include mq(tablet) {
+            font-size: 40px;
+        }
+
+        @include mq(desktop) {
+            font-size: 56px;
+        }
+    }
+
+    @include mq(tablet) {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 81px;
+    }
+}
+
+.information-container-active {
+    padding: 48px 26px;
+    height: 256px;
+
+    @include mq(tablet) {
+        height: 440px;
+        padding: 119px 64px;
+    }
+
+    @include mq(desktop) {
+        height: 400px;
+        padding: 74px 165px;
+    }
+}
+
+#night {
+    background: rgba(0, 0, 0, 0.75);
+
+    h6, p {
+        color: white;
+    }
+}
+
