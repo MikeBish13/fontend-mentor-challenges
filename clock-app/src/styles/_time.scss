@@ -1,31 +1,3 @@
-.time-container {
-  margin-top: 355px;
-  margin-left: 26px;
-  transition: all 200ms ease-in;
-
-  @include mq(tablet) {
-    margin-top: 593px;
-    margin-left: 64px;
-  }
-
-  @include mq(desktop) {
-    margin-top: 414px;
-    margin-left: 165px;
-  }
-}
-
-.time-container-active {
-  margin-top: 99px;
-
-  @include mq(tablet) {
-    margin-top: 153px;
-  }
-
-  @include mq(desktop) {
-    margin-top: 56px;
-  }
-
-}
 
 .welcome-message {
   display: flex;

@@ -1,36 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
-    --fw-light: 300;
-    --fw-reg: 400;
-    --fw-bold: 700;
+  --fw-light: 300;
+  --fw-reg: 400;
+  --fw-bold: 700;
 }
 
 body {
-    margin: 0;
-    color: white;
-    font-family: 'Inter', sans-serif;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  margin: 0;
+  color: white;
+  font-family: "Inter", sans-serif;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-body, .App {
-    min-height: 100%;
+html,
+.App {
+  min-height: 100vh;
 }
 
-h1, h2, h3, h4, h5, h6, p, button {
-    margin: 0;
-    padding: 0;
+.App {
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button {
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-    width: 80%;
-    margin: 0 auto;
+  width: 85%;
+  height: 100vh;
+  padding: 40px 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include mq(desktop) {
+    padding: 56px 0;
+    width: 77%;
+  }
+}
+
+.time-and-button-container {
+  margin-top: 68px;
+
+  @include mq(tablet) {
+    margin-top: 73px;
+  }
+
+  @include mq(desktop) {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
 }

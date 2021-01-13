@@ -65,10 +65,14 @@ function App() {
 
   return (
     <div className="App">
-      <Quotes quote={quote} setQuote={setQuote} activeBar={activeBar} />
-      <Timer timeInfo={timeInfo} location={location} dayHours={dayHours} dayTime={dayTime} activeBar={activeBar} />
-      <Button activeBar={activeBar} setActiveBar={setActiveBar}/>
-      <Information timeInfo={timeInfo} activeBar={activeBar} dayTime={dayTime} />
+        <div className="container">
+            <Quotes quote={quote} setQuote={setQuote} activeBar={activeBar} />
+                  <div className="time-and-button-container">
+                        <Timer timeInfo={timeInfo} location={location} dayHours={dayHours} dayTime={dayTime} activeBar={activeBar} />
+                        <Button activeBar={activeBar} setActiveBar={setActiveBar}/>
+                  </div>
+        </div>
+            <Information timeInfo={timeInfo} activeBar={activeBar} dayTime={dayTime} />
     </div>
   );
 }

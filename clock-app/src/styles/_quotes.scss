@@ -1,34 +1,19 @@
 .quote-container {
-    position: absolute;
-    top: 31px;
-    left: 26px;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
 
-    @include mq(tablet) {
-        position: absolute;
-        top: 80px;
-        left: 64px;
-        width: 80%;
-    }
-
-    @include mq(desktop) {
-        left: 165px;
-        max-width: 573px;
-    }
-
-    &-inactive {
-        display: none;
-    }
+  &-inactive {
+    display: none;
+  }
 }
 
 .quote-refresh {
-    background: none;
-    border: none;
+  background: none;
+  border: none;
 }
 
 .quote-text {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }

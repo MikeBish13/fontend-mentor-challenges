@@ -1,43 +1,31 @@
 .btn {
-    height: 39px;
-    width: 115px;
-    border-radius: 100px;
-    border: none;
-    color: rgba(0,0,0,0.5);
-    padding: 13px 4px 13px 17px;
-    margin-top: 48px;
-    margin-left: 26px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  height: 39px;
+  width: 115px;
+  border-radius: 100px;
+  border: none;
+  color: rgba(0, 0, 0, 0.5);
+  padding: 13px 4px 13px 17px;
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 200ms ease-in;
+
+  img {
+    width: 32px;
+    height: 32px;
     transition: all 200ms ease-in;
+  }
 
-    img {
-        width: 32px;
-        height: 32px;
-        transition: all 200ms ease-in; 
+  &:hover {
+    cursor: pointer;
+
+    svg circle {
+      fill: #999999;
     }
-
-    &:hover {
-        cursor: pointer;
-
-        svg circle {
-            fill: #999999;
-        }
-    }
-
-    @include mq(tablet) {
-        margin-left: 64px;
-    }
-
-    @include mq(desktop) {
-        position: absolute;
-        bottom: 0;
-        right: 165px;
-        margin: 0;
-    }
+  }
 }
 
 .btn-active {
-    top: 322px;
+  top: 322px;
 }
