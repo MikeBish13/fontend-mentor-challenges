@@ -15,6 +15,11 @@
     width: 32px;
     height: 32px;
     transition: all 200ms ease-in;
+
+    @include mq(tablet) {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   &:hover {
@@ -23,6 +28,12 @@
     svg circle {
       fill: #999999;
     }
+  }
+
+  @include mq(tablet) {
+    height: 56px;
+    width: 146px;
+    padding: 8px 9px 8px 21px;
   }
 }
 

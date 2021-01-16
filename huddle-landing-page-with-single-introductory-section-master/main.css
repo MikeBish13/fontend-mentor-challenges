@@ -2,8 +2,7 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
@@ -14,7 +13,7 @@
 
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: white;
   height: 100vh;
   background-image: url(images/bg-desktop.svg);
@@ -32,7 +31,7 @@ ul {
 }
 
 h1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .navbar {
@@ -43,56 +42,39 @@ main {
   margin: 0 auto;
   padding-top: 3em;
   width: 90%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  align-items: flex-start;
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex-direction: column;
+  flex: 1;
   margin-left: 1em;
 }
-
 .container h1 {
   font-size: 2.2rem;
 }
-
 @media (max-width: 1050px) {
   .container h1 {
     font-size: 1.8rem;
   }
 }
-
 .container p {
   font-weight: var(--fw-light);
   line-height: 1.6;
 }
-
 .container .btn {
   width: 40%;
-  padding: .8em;
+  padding: 0.8em;
   font-size: 1rem;
   color: var(--clr-violet);
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   border: none;
   border-radius: 30px;
-  -webkit-box-shadow: 2px 2px 10px #261369;
-          box-shadow: 2px 2px 10px #261369;
+  box-shadow: 2px 2px 10px #261369;
   cursor: pointer;
 }
-
 .container .btn:hover {
   background: #261369;
   color: white;
@@ -100,36 +82,25 @@ main {
 }
 
 .img-container {
-  -webkit-box-flex: 1.2;
-      -ms-flex: 1.2;
-          flex: 1.2;
+  flex: 1.2;
 }
 
 .social-icons {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
+  align-self: flex-end;
   position: absolute;
   bottom: 0;
   list-style: none;
 }
-
 .social-icons li {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-right: .5em;
-  padding: .5em;
+  margin-right: 0.5em;
+  padding: 0.5em;
   width: 40px;
   border: 1px solid white;
   border-radius: 50%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 .social-icons a {
   text-decoration: none;
   color: white;
@@ -141,27 +112,27 @@ main {
     background-size: cover;
     background-position: top;
   }
+
   .logo {
     width: 40%;
   }
+
   main {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     text-align: center;
     width: 85%;
     padding-top: 1em;
   }
+
   button.btn {
     width: 80% !important;
     margin: 1em auto;
   }
+
   .social-icons {
     margin-top: 2em;
     position: relative;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
+    -ms-grid-row-align: center;
         align-self: center;
   }
 }

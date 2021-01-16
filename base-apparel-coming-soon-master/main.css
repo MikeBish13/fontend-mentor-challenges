@@ -2,8 +2,7 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
@@ -19,7 +18,7 @@
 
 body {
   margin: 0;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 1rem;
   position: relative;
   background-image: url(images/bg-pattern-desktop.svg);
@@ -55,7 +54,6 @@ header {
   color: var(--clr-desatrRed);
   font-weight: var(--fw-light);
 }
-
 .page-title span {
   color: var(--clr-darkRed);
   font-weight: var(--fw-strong);
@@ -84,28 +82,22 @@ form {
   width: 100%;
 }
 
-::-webkit-input-placeholder {
+::-moz-placeholder {
   color: var(--clr-desatrRed);
   font-weight: var(--fw-medium);
-  font-size: .85rem;
+  font-size: 0.85rem;
 }
 
 :-ms-input-placeholder {
   color: var(--clr-desatrRed);
   font-weight: var(--fw-medium);
-  font-size: .85rem;
-}
-
-::-ms-input-placeholder {
-  color: var(--clr-desatrRed);
-  font-weight: var(--fw-medium);
-  font-size: .85rem;
+  font-size: 0.85rem;
 }
 
 ::placeholder {
   color: var(--clr-desatrRed);
   font-weight: var(--fw-medium);
-  font-size: .85rem;
+  font-size: 0.85rem;
 }
 
 button {
@@ -117,10 +109,8 @@ button {
   background: var(--grd-secondary);
   border: none;
   border-radius: 50px;
-  -webkit-box-shadow: 0 0px 0px var(--clr-desatrRed, 0.1), 0 5px 10px var(--clr-desatrRed, 0.05);
-          box-shadow: 0 0px 0px var(--clr-desatrRed, 0.1), 0 5px 10px var(--clr-desatrRed, 0.05);
+  box-shadow: 0 0px 0px var(--clr-desatrRed, 0.1), 0 5px 10px var(--clr-desatrRed, 0.05);
 }
-
 button:hover {
   background: var(--clr-desatrRed);
   cursor: pointer;
@@ -143,9 +133,9 @@ form.error .error-icon {
 
 form.error .error-message {
   display: block;
-  font-size: .75em;
+  font-size: 0.75em;
   color: var(--clr-softRed);
-  margin: 1em .5em;
+  margin: 1em 0.5em;
   text-align: left;
 }
 
@@ -153,6 +143,7 @@ form.error .error-message {
   .mobile-img {
     display: none;
   }
+
   .desktop-img {
     display: block;
     background-image: url("images/hero-desktop.jpg");
@@ -163,21 +154,26 @@ form.error .error-message {
     width: 40%;
     height: 100vh;
   }
+
   header {
     max-width: 35vw;
     text-align: left;
   }
+
   header {
     margin-left: 15%;
     width: 25em;
   }
+
   .logo {
     margin-left: 15%;
   }
+
   .page-title {
     font-size: 3rem;
     margin-top: 0.75em;
   }
+
   input[type=email] {
     margin-left: 0;
   }

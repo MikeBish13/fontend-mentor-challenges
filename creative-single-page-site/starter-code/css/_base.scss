@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;800&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-red: #F94F4F;
+    --clr--black-accent: #191921;
+    --clr-white: #fff;
+    --clr-black: #000;
+
+    --clr-red-hover: #f94f4fb4;
+    --clr-black-hover: #191921bb;
+
+    --fw-reg: 400;
+    --fw-bold: 800;
+
+    --transition: all 200ms ease-in;
+}
+
+body {
+    font-family: 'Commissioner', sans-serif;
+    color: var(--clr-black);
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+p, 
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 87%;
+    margin: 0 auto;
+}

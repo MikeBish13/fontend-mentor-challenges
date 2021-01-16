@@ -37,8 +37,8 @@ function App() {
     useEffect(() => {
       Promise.all([
         fetch('https://freegeoip.app/json'),
-        fetch('http://worldtimeapi.org/api/ip'),
-        fetch('http://api.quotable.io/random')
+        fetch('https://worldtimeapi.org/api/ip'),
+        fetch('https://api.quotable.io/random')
       ]).then(function (responses) {
         return Promise.all(responses.map(function (response) {
           return response.json();

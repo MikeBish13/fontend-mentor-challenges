@@ -1,0 +1,41 @@
+.btn {
+    text-decoration: none;
+    width: max-content;
+    display: block;
+    font-family: 'Commissioner', sans-serif;
+    font-size: 18px;
+    font-weight: var(--fw-bold);
+    padding: 1.3em 1.9em;
+    transition: var(--transition);
+}
+
+.btn-primary {
+    color: var(--clr-white);
+    background: var(--clr-red);
+
+    &:hover {
+        background: var(--clr-red-hover);
+    }
+}
+
+.btn-secondary {
+    color: var(--clr-white);
+    background: var(--clr-black-accent);
+
+    &:hover {
+        background: var(--clr-black-hover);
+    }
+}
+
+.btn-tertiary {
+    font-weight: var(--fw-bold);
+    color: var(--clr-red);
+    background: none;
+    border-bottom: 2px solid var(--clr-red);
+    padding: 0 0 8px 0;
+
+    &:hover {
+        color: var(--clr-red-hover); 
+        border-bottom: 2px solid var(--clr-red-hover); 
+    }
+}

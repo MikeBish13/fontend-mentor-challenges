@@ -4,8 +4,7 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
@@ -46,7 +45,7 @@ p {
 h1,
 h2,
 h3 {
-  font-family: 'Poppins', 'sans-serif';
+  font-family: "Poppins", "sans-serif";
 }
 
 h1 {
@@ -58,7 +57,7 @@ h2 {
 }
 
 p {
-  font-family: 'Open Sans', 'sans';
+  font-family: "Open Sans", "sans";
   font-size: 14px;
   line-height: 1.6;
 }
@@ -66,13 +65,12 @@ p {
 /* Components ===
 =============== */
 .btn {
-  font-family: 'Open Sans', 'sans';
+  font-family: "Open Sans", "sans";
   cursor: pointer;
   border-radius: 50px;
-  padding: .5em 2em;
+  padding: 0.5em 2em;
   background: none;
-  -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .btn-ghost {
@@ -85,7 +83,7 @@ p {
   background: var(--clr-pink);
   font-size: 14px;
   font-weight: var(--fw-med);
-  padding: .75em 3em;
+  padding: 0.75em 3em;
   color: white;
   border: none;
 }
@@ -93,15 +91,9 @@ p {
 /* Header =====
 ============= */
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 1rem;
 }
 
@@ -155,7 +147,7 @@ p {
 }
 
 .stat-text {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 /* Features =====
@@ -256,15 +248,9 @@ input {
 
 .phone-container,
 .email-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-start;
+  align-items: center;
   margin-bottom: 1em;
 }
 
@@ -279,7 +265,7 @@ input {
 
 .fab {
   font-size: 1.5rem;
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
 
 /* Media queries =====
@@ -288,46 +274,35 @@ input {
 ========== */
 @media (min-width: 375px) {
   .feature-bg-desktop-top,
-  .feature-bg-desktop-bottom {
+.feature-bg-desktop-bottom {
     display: block;
   }
+
   .footer-bg-desktop-img {
     display: block;
   }
+
   .feature-bg-mobile-top,
-  .feature-bg-mobile-bottom {
+.feature-bg-mobile-bottom {
     display: none;
   }
+
   .footer-bg-mobile-img {
     display: none;
   }
 }
-
 @media (min-width: 600px) {
   .stats {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-between;
+    align-items: center;
   }
 }
-
 @media (min-width: 850px) {
   .feature-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-between;
+    align-items: center;
     text-align: left;
     margin: 0 auto;
   }
@@ -338,28 +313,25 @@ input {
   .feature-container .feature-info {
     width: 40%;
   }
+
   .feature-light .feature-container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    flex-direction: row-reverse;
   }
+
   .footer-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    flex-direction: row-reverse;
     gap: 2em;
   }
+
   .footer-details {
     margin-top: 0;
   }
+
   input {
     width: 50%;
   }
+
   .btn-form {
     display: inline;
     margin-left: 2em;
