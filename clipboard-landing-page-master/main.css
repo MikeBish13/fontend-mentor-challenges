@@ -2,7 +2,8 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 :root {
@@ -85,13 +86,15 @@ h3 {
 
 .btn-green {
   background: var(--clr-cyan);
-  box-shadow: 0px 10px 20px -15px var(--clr-cyan);
+  -webkit-box-shadow: 0px 10px 20px -15px var(--clr-cyan);
+          box-shadow: 0px 10px 20px -15px var(--clr-cyan);
   border-bottom: 2px solid #006657;
 }
 
 .btn-blue {
   background: var(--clr-blue);
-  box-shadow: 0px 10px 20px -15px var(--clr-blue);
+  -webkit-box-shadow: 0px 10px 20px -15px var(--clr-blue);
+          box-shadow: 0px 10px 20px -15px var(--clr-blue);
   border-bottom: 2px solid #0522ff;
 }
 
@@ -232,77 +235,81 @@ h3 {
   h1 {
     font-size: 2.5rem;
   }
-
   h2 {
     font-size: 2rem;
   }
-
   .hero {
     background: url("images/bg-header-desktop.png");
     background-repeat: no-repeat;
   }
-
   .btn {
     display: inline-block;
     margin: 2em 0.5em;
   }
-
   .about-container {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-
   .functions {
     width: 40%;
     text-align: left;
   }
-
   .function-text {
     margin: 0;
   }
-
   .computer {
     width: 50%;
-    -ms-grid-row-align: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
         align-self: center;
     margin-left: -30px;
   }
-
   .workflow-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-
   .workflow-card {
     width: 30%;
   }
-
   .companies {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .companies img {
-    -ms-grid-row-align: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
         align-self: center;
   }
-
   .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-
   .footer-logo {
-    -ms-grid-row-align: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
         align-self: center;
   }
-
   .footer-item {
     text-align: left;
   }
-
   .social-icon {
     margin: 0 1em;
-    align-self: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
   }
 }
 /*# sourceMappingURL=main.css.map */
