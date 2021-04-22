@@ -130,9 +130,13 @@
 
 .order-contents {
   display: none;
+
   @include mq(desktop) {
     display: block;
     list-style: none;
+    position: sticky;
+    top: 1px;
+    height: max-content;
 
     li {
       margin-bottom: 24px;

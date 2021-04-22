@@ -1296,6 +1296,12 @@ footer {
   .order-contents {
     display: block;
     list-style: none;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 1px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
   }
   .order-contents li {
     margin-bottom: 24px;

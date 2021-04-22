@@ -121,7 +121,7 @@ class SelectionCards extends React.Component {
       <div>
         {/* <!-- How do you drink your coffee --> */}
         <div className="selection-card">
-          <div className="selection-card-header">
+          <div className="selection-card-header" id="preferences-header">
             <h4>How do you drink your coffee?</h4>
             <button className="selection-card-button"></button>
           </div>
@@ -148,7 +148,7 @@ class SelectionCards extends React.Component {
 
         {/* <!-- What type of cofee --> */}
         <div className="selection-card">
-          <div className="selection-card-header">
+          <div className="selection-card-header" id="bean-header">
             <h4>What type of coffee?</h4>
             <button className="selection-card-button"></button>
           </div>
@@ -177,7 +177,7 @@ class SelectionCards extends React.Component {
 
         {/* <!-- How much would you like --> */}
         <div className="selection-card">
-          <div className="selection-card-header">
+          <div className="selection-card-header" id="quantity-header">
             <h4>How much would you like?</h4>
             <button className="selection-card-button"></button>
           </div>
@@ -226,7 +226,7 @@ class SelectionCards extends React.Component {
 
         {/* <!-- Want us to grind them --> */}
         <div className="selection-card">
-          <div className="selection-card-header grind-option-header">
+          <div className="selection-card-header grind-option-header" id="grind-header">
             <h4>Want us to grind them?</h4>
             <button className="selection-card-button"></button>
           </div>
@@ -260,7 +260,7 @@ class SelectionCards extends React.Component {
 
         {/* <!-- How often should we deliver --> */}
         <div className="selection-card">
-          <div className="selection-card-header">
+          <div className="selection-card-header" id="delivery-header">
             <h4>How often should we deliver?</h4>
             <button className="selection-card-button"></button>
           </div>
