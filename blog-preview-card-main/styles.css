@@ -1,0 +1,231 @@
+/* ===========
+   RESET 
+   =========== */
+
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* =========
+   STYLE 
+   ========== */
+/* Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+/* Colours */
+
+:root {
+    --clr-yellow: #f4D04E;
+    --clr-gray-dark: #111111;
+    --clr-gray-light: #6b6b6b;
+    --clr-white: #FFFFFF;
+    --space-50: 4px;
+    --space-100: 8px;
+    --space-150: 12px;
+    --space-200: 16px;
+    --fw-bold: 700;
+    --fw-extra-bold: 900;
+    --fs-lg: 24px;
+    --fs-md: 16px;
+    --fs-sm: 14px;
+}
+
+/* Custom classes */
+
+.fs-24 {
+    font-size: var(--fs-lg);  
+}
+
+.fs-16 {
+    font-size: var(--fs-md);
+}
+
+.fs-14 {
+    font-size: var(--fs-sm);
+}
+
+.fc-bold {
+    color: var(--clr-gray-dark);
+    font-weight: var(--fw-extra-bold);
+}
+
+.fc-light {
+    color: var(--clr-gray-light)
+}
+
+/* Styling */
+
+body {
+    font-family: "Figtree", sans-serif;
+    line-height: 150%;
+    letter-spacing: 0px;
+    background: var(--clr-yellow);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    background: var(--clr-white);
+    padding: 24px;
+    border-radius: 20px;
+    border: 1px solid var(--clr-gray-dark);
+    min-width: 327px;
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    background: var(--clr-gray-dark);
+    left: 8px;
+    top: 8px;
+    z-index: -1;
+}
+
+.card-image {
+    border-radius: 10px;
+    margin-bottom: var(--space-200);
+}
+
+.card-body {
+    max-width: 336px;
+}
+
+.card-tag {
+    background: var(--clr-yellow);
+    padding: var(--space-50) var(--space-150);
+    border-radius: 4px;
+}
+
+.card-date {
+    margin-top: var(--space-100);
+}
+
+.card-title {
+    text-decoration: none;
+    display: block;
+    margin-top: var(--space-200);
+}
+
+.card-title:hover {
+    color: var(--clr-yellow);
+}
+
+.card-text {
+    margin-top: var(--space-200);
+}
+
+.card-user {
+    display: flex;
+    align-items: center;
+    gap: var(--space-150);
+    margin-top: var(--space-200);
+}
+
+.card-user--picture {
+    height: 32px;
+    aspect-ratio: 1;
+}
+
+.card-user--name {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 375px) {
+    .card-text {
+        font-size: 14px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .card-date {
+        font-size: 12px;
+    }
+
+    .card-tag {
+        font-size: 12px;
+    }
+}
+
